@@ -1,0 +1,11 @@
+.mediaMiddle tr td,
+.mediaMiddle tr th {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+/*.embedStyle{*/
+    /*min-width: 320px;*/
+    /*min-height: 260px;*/
+    /*width: auto;*/
+/*}*/

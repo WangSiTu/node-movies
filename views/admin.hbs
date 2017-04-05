@@ -1,0 +1,71 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <div class="row">
+        <form action="/admin/movie/new" method="post" class="form-horizontal">
+            <input type="hidden" name="id" value="{{movieAdmin._id}}">
+            <div class="form-group">
+                <label for="inputTitle" class="col-sm-2 control-label">电影名字</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputTitle" name="title" value="{{movieAdmin.title}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputDoctor" class="col-sm-2 control-label">导演</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputDoctor" name="doctor" value="{{movieAdmin.doctor}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputCountry" class="col-sm-2 control-label">国家</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputCountry" name="country" value="{{movieAdmin.country}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputLanguage" class="col-sm-2 control-label">语言</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputLanguage" name="language" value="{{movieAdmin.language}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPoster" class="col-sm-2 control-label">海报地址</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputPoster" name="poster" value="{{movieAdmin.poster}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputFlash" class="col-sm-2 control-label">片源地址</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputFlash" name="flash" value="{{movieAdmin.flash}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputYear" class="col-sm-2 control-label">上映时间</label>
+                <div class="col-sm-10">
+                    <input type="text" id="inputYear" name="year" value="{{movieAdmin.year}}" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputSummary" class="col-sm-2 control-label">简介</label>
+                <div class="col-sm-10">
+                    <textarea id="inputSummary" name="summary" rows="6" placeholder="请输入简介" class="form-control">{{movieAdmin.summary}}</textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-default" type="submit">
+                        {{button}}
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

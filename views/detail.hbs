@@ -1,0 +1,25 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 text-center">
+            <embed src="{{movieDetail.flash}}" class="embedStyle" width="680" height="560" quality="high" algin="middle" allowFullScreen="true"></embed>
+            <!--<embed src='http://player.youku.com/player.php/sid/XMjQ4NTkzNTI0OA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>-->
+        </div>
+        <div class="col-md-5">
+            <dl class="dl-horizontal">
+                <dt>电影名字</dt>
+                <dd>{{movieDetail.title}}</dd>
+                <dt>导演</dt>
+                <dd>{{movieDetail.doctor}}</dd>
+                <dt>国家</dt>
+                <dd>{{movieDetail.country}}</dd>
+                <dt>语言</dt>
+                <dd>{{movieDetail.language}}</dd>
+                <dt>上映时间</dt>
+                <dd>{{movieDetail.year}}</dd>
+                <dt>简介</dt>
+                <dd>{{movieDetail.summary}}</dd>
+            </dl>
+        </div>
+    </div>
+</div>
