@@ -135,7 +135,7 @@ exports.movieNew = function (req, res) {
         //新录入
         resMovie = new Movie({
             title: movieObj.title,
-            doctor: movieObj.doctor,
+            director: movieObj.director,
             language: movieObj.language,
             country: movieObj.country,
             year: movieObj.year,

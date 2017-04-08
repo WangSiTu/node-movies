@@ -2,11 +2,19 @@ var mongoose = require('mongoose'),
     moment = require('moment');
 //定义模式
 var MovieSchema = new mongoose.Schema({
-    title: String,
-    doctor: String,
-    language: String,
-    country: String,
-    year: Number,
+    // data: {
+        title: {type: String, default: ''},
+        otherName: {type: String, default: ''},
+        director: {type: String, default: ''},
+        year: {type: String, default: ''},
+        region: {type: String, default: ''},
+        type: [],
+        href: {type: String, default: ''},
+        poster: {type: String, default: ''},
+        flash: {type: String, default: ''},
+        detail: {type: String, default: ''},
+        summary: {type: String, default: '暂无简介'},
+    // },
     meta: {
         createAt: {
             type: Date,
@@ -17,10 +25,8 @@ var MovieSchema = new mongoose.Schema({
             default: Date.now()
         }
     },
-    flash: String,
-    poster: String,
-    summary: String
-});
+
+}, {collection: 'movie'});
 
 //在保存以前调用的方法
 MovieSchema.pre('save', function (next) {
@@ -50,9 +56,7 @@ MovieSchema.statics = {
         return this
             .findOne({_id: id})
             .exec(cb);
-
     }
 };
-
 
 module.exports = MovieSchema;

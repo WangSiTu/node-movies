@@ -35,7 +35,7 @@ var movieData = {
     },
     detail: {
         title: '血战钢锯岭',
-        doctor: '梅尔·吉布森',
+        director: '梅尔·吉布森',
         country: '美国/澳大利亚',
         year: 2016,
         language: '英语',
@@ -53,7 +53,7 @@ var movieData = {
     },
     admin: {
         title: '',
-        doctor: '',
+        director: '',
         country: '',
         year: '',
         language: '',
@@ -66,7 +66,7 @@ var movieData = {
             {
                 id: 1,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
@@ -81,7 +81,7 @@ var movieData = {
             {
                 id: 2,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
@@ -96,7 +96,7 @@ var movieData = {
             {
                 id: 3,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
@@ -111,7 +111,7 @@ var movieData = {
             {
                 id: 4,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
@@ -126,7 +126,7 @@ var movieData = {
             {
                 id: 5,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
@@ -141,7 +141,7 @@ var movieData = {
             {
                 id: 6,
                 title: '血战钢锯岭',
-                doctor: '梅尔·吉布森',
+                director: '梅尔·吉布森',
                 country: '美国/澳大利亚',
                 year: 2016,
                 language: '英语',
