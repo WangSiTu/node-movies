@@ -1,0 +1,13 @@
+.back-hover{
+    position: relative;
+}
+
+.back-hover:hover{
+    background: rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.back-hover img{
+    /*padding: 0;*/
+    /*margin: 0;*/
+}

@@ -1,22 +1,21 @@
-<h2 class="text-center">电影详情</h2>
 <div class="container">
     <div class="row">
-        <div class="col-md-7 text-center">
+        <div class="col-lg-7 col-md-12 text-center">
             <embed embed-src="{{vm.movieDetail.flash}}" width="680" height="560" quality="high" algin="middle" allowFullScreen="true"></embed>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-12 ">
             <dl class="dl-horizontal">
                 <dt>电影名字</dt>
                 <dd>{{vm.movieDetail.title?vm.movieDetail.title:'暂无录入'}}</dd>
-                <dt>导演</dt>
+                <dt>导&emsp;&emsp;演</dt>
                 <dd>{{vm.movieDetail.director?vm.movieDetail.director:'暂无录入'}}</dd>
-                <dt>国家</dt>
+                <dt>国&emsp;&emsp;家</dt>
                 <dd>{{vm.movieDetail.country?vm.movieDetail.country:'暂无录入'}}</dd>
-                <dt>语言</dt>
+                <dt>语&emsp;&emsp;言</dt>
                 <dd>{{vm.movieDetail.language?vm.movieDetail.language:'暂无录入'}}</dd>
                 <dt>上映时间</dt>
                 <dd>{{vm.movieDetail.year?vm.movieDetail.year:'暂无录入'}}</dd>
-                <dt>简介</dt>
+                <dt>简&emsp;&emsp;介</dt>
                 <dd>{{vm.movieDetail.summary?vm.movieDetail.summary:'暂无录入'}}</dd>
             </dl>
         </div>

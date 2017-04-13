@@ -29,6 +29,7 @@ app.run(function ($rootScope, $state, $stateParams) {
                 resolve: {
                     loadFile: lazyLoad([
                         './viewAndCtr/home/homeCtr.js',
+                        './viewAndCtr/home/home.css'
                     ])
                 }
             })
