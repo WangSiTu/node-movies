@@ -1,0 +1,37 @@
+<h2 class="text-center">电影列表</h2>
+<div class="container">
+    <div class="text-center" style="padding-bottom: 10px;">
+        <button class="btn btn-success" ng-click="vm.goAddMovie()">新增</button>
+    </div>
+    <div class="row">
+        <table class="table table-hover table-bordered mediaMiddle">
+            <thead>
+            <tr class="text-center">
+                <th>电影名</th>
+                <th>导演</th>
+                <th>国家</th>
+                <th>语言</th>
+                <th>上映年份</th>
+                <th>录入时间</th>
+                <th>更新时间</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="item-id-{{_id}}" ng-repeat="item in vm.adminList">
+                <td>{{item.title?item.title:'暂无录入'}}</td>
+                <td>{{item.director?item.director:'暂无录入'}}</td>
+                <td>{{item.country?item.country:'暂无录入'}}</td>
+                <td>{{item.language?item.language:'暂无录入'}}</td>
+                <td>{{item.year?item.year:'暂无录入'}}</td>
+                <td>{{item.meta.createAt|date:'yyyy-MM-dd H:ss:mm'}}</td>
+                <td>{{item.meta.updateAt|date:'yyyy-MM-dd H:ss:mm'}}</td>
+                <td>
+                    <button class="btn btn-primary" ng-click="vm.checkMovie(item._id)">查看</button>
+                    <button type="button" class="btn btn-danger del" ng-click="vm.deleteMovie(item._id)" >删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
