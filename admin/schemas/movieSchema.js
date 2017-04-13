@@ -1,28 +1,26 @@
-var mongoose = require('mongoose'),
-    moment = require('moment');
+var mongoose = require('mongoose');
 //定义模式
 var MovieSchema = new mongoose.Schema({
-    // data: {
-        title: {type: String, default: ''},
-        otherName: {type: String, default: ''},
-        director: {type: String, default: ''},
-        year: {type: String, default: ''},
-        region: {type: String, default: ''},
-        type: [],
-        href: {type: String, default: ''},
-        poster: {type: String, default: ''},
-        flash: {type: String, default: ''},
-        detail: {type: String, default: ''},
-        summary: {type: String, default: '暂无简介'},
-    // },
+    title: {type: String, default: ''},
+    otherName: {type: String, default: ''},
+    director: {type: String, default: ''},
+    language: {type: String, default: ''},
+    year: {type: String, default: ''},
+    country: {type: String, default: ''},
+    type: [],
+    href: {type: String, default: ''},
+    poster: {type: String, default: ''},
+    flash: {type: String, default: ''},
+    detail: {type: String, default: ''},
+    summary: {type: String, default: '暂无简介'},
     meta: {
         createAt: {
             type: Date,
-            default: Date.now()
+            default: Date.now
         },
         updateAt: {
             type: Date,
-            default: Date.now()
+            default: Date.now
         }
     },
 

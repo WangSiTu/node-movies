@@ -4,7 +4,7 @@
 var cheerio = require('cheerio');
 var request = require('request');
 var async = require('async');
-var MovieModel = require('./modules/mongoose');
+var MovieModel = require('./modules/mongooseModule');
 
 // async.mapLimit(pageUrl, 5, function (page, callback) {})
 
@@ -43,7 +43,7 @@ function getMovieList(startUrl, lastCB) {
         });
 
         //测试用一个链接
-        // reqUrl = reqUrl.slice(0, 1);
+        reqUrl = reqUrl.slice(0, 10);
 
         //根据数组抓取视频的基本信息，aysunc.mapLimit(arr,并发,单例函数（数组元素，callback）,可选-异步结束执行）)
         async.mapLimit(reqUrl, 2, function (data, cb) {
@@ -78,13 +78,9 @@ function getMovieDetail(obj, cb) {
         if (err) return console.log(err);
         var $ = cheerio.load(resDetail.body);
 
-        // console.log($('li span.pub').text(), 'length');
-
-        // return;
-
         obj = {
             poster: $('.p-thumb').find('img').attr('src'),
-            title: $('.p-row.p-title').text().slice(3, -2),
+            title: $('.p-row.p-title').text().slice(3, -6),
             otherName: $('.p-alias').attr('title'),
             year: (function () {
                 var year = $('div.p-base span.pub');
@@ -95,7 +91,7 @@ function getMovieDetail(obj, cb) {
                 }
             })(),
             director: $('li:contains(导演：)').find('a').attr('title'),
-            region: $('li:contains(地区：)').find('a').text(),
+            country: $('li:contains(地区：)').find('a').text(),
             type: (function () {
                 var arr = [];
                 $('li:contains(类型：)').find('a').each(function () {
