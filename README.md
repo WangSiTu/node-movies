@@ -1,4 +1,4 @@
-# node + mongoose + angular movie
+#  node + mongoose + angular movie
 ### 前提node环境和mongoDB环境已经配置好
 #### 第一版只有普通的增删改查功能（无前后分离,分支v1.0.0）。
 #### 第二版增加优酷网爬虫，暂时只能爬取第一页电影（无前后分离,分支v1.2.0）。
