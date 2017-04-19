@@ -4,6 +4,7 @@ var MovieSchema = new mongoose.Schema({
     title: {type: String, default: ''},
     otherName: {type: String, default: ''},
     director: {type: String, default: ''},
+    starring:{type:String,default:''},
     language: {type: String, default: ''},
     year: {type: String, default: ''},
     country: {type: String, default: ''},
@@ -16,13 +17,13 @@ var MovieSchema = new mongoose.Schema({
     meta: {
         createAt: {
             type: Date,
-            default: Date.now
+            default: Date.now()
         },
         updateAt: {
             type: Date,
-            default: Date.now
+            default: Date.now()
         }
-    },
+    }
 
 }, {collection: 'movie'});
 

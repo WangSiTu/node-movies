@@ -13,11 +13,10 @@ var movie = [];
 (function () {
     console.log('开始抓取数据...');
     var startUrl = 'http://list.youku.com/category/show/c_96.html?spm=a2hmv.20009921.nav-second.5~1~3!11~A';
-
     getMovieList(startUrl, function () {
         console.log('开始写入数据库...');
         async.mapLimit(movie, 10, function (data, cb) {
-            console.log(data.title);
+            // console.log(data.title);
             var sendMovie = new MovieModel(data);
             // return
             sendMovie.save(function (err, res) {

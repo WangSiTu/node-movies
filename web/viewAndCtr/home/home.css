@@ -11,3 +11,12 @@
     /*padding: 0;*/
     /*margin: 0;*/
 }
+
+.fiveHeight{
+    height: 2rem;
+}
+
+.fontHeight{
+    display: block;
+    height: 3rem;
+}
