@@ -7,6 +7,6 @@
 #### 2. 进入目录 cd admin/
 #### 3. 安装项目依赖 npm/cnpm i --save-dev
 #### 3. 启动node服务 node/nodemon app.js
-#### 4. 启动node优酷爬虫node YoukuMovieCrawler.js
+#### 4. 启动node优酷爬虫node youkuMovies.js
 #### 5. index页面在web目录打开
 (PS:nodemon 是自动重启node服务，安装nodemon：npm/cnpm i nodemon -g）
